@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LR Store - Name Tag Anti Air & Berkualitas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-bg {
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
+                        url('https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+        }
+
+        .product-card:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigasi -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="bg-blue-600 text-white p-2 rounded-lg mr-2">
+                        <i class="fas fa-id-card text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-extrabold tracking-tight text-slate-800">LR <span class="text-blue-600">STORE</span></span>
+                </div>
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="#" class="text-slate-600 hover:text-blue-600 font-semibold transition">Home</a>
+                    <a href="#keunggulan" class="text-slate-600 hover:text-blue-600 font-semibold transition">Keunggulan</a>
+                    <a href="#harga" class="text-slate-600 hover:text-blue-600 font-semibold transition">Daftar Harga</a>
+                    <a href="https://wa.me/6285725391967" class="bg-green-500 text-white px-6 py-2.5 rounded-full hover:bg-green-600 transition-all shadow-md shadow-green-200 font-bold flex items-center">
+                        <i class="fab fa-whatsapp mr-2 text-lg"></i> Konsultasi Gratis
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-600 focus:outline-none p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pt-2 pb-6 space-y-2 border-t border-slate-100 shadow-xl">
+            <a href="#" class="block px-4 py-3 text-base font-semibold text-slate-700 hover:bg-slate-50 rounded-xl">Home</a>
+            <a href="#keunggulan" class="block px-4 py-3 text-base font-semibold text-slate-700 hover:bg-slate-50 rounded-xl">Keunggulan</a>
+            <a href="#harga" class="block px-4 py-3 text-base font-semibold text-blue-600 hover:bg-blue-50 rounded-xl">Daftar Harga</a>
+            <a href="https://wa.me/6285725391967" class="block px-4 py-4 text-base font-bold bg-green-500 text-white rounded-xl text-center shadow-lg shadow-green-100 mt-4">
+                <i class="fab fa-whatsapp mr-2"></i> Hubungi WhatsApp
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg min-h-screen flex items-center px-4 pt-20">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="text-center lg:text-left">
+                <span class="inline-block bg-blue-600/20 text-blue-400 px-4 py-1.5 rounded-full text-sm font-bold tracking-wider mb-6 border border-blue-500/30">
+                    PREMIUM NAME TAG SPECIALIST
+                </span>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-[1.1]">
+                    Name Tag <span class="text-blue-400">Anti Air</span> & Berkualitas
+                </h1>
+                <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                    Identitas profesional yang tahan lama, elegan, dan dikerjakan dengan presisi tinggi menggunakan material pilihan terbaik.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="https://wa.me/6285725391967" class="bg-green-500 text-white px-10 py-5 rounded-2xl text-lg font-bold hover:bg-green-600 transform hover:-translate-y-1 transition-all shadow-2xl shadow-green-500/20 flex items-center justify-center">
+                        <i class="fab fa-whatsapp text-2xl mr-3"></i>
+                        Pesan di WhatsApp Kami
+                    </a>
+                </div>
+            </div>
+            
+           
+
+    <!-- Keunggulan Section -->
+    <section id="keunggulan" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-20">
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-6">Kualitas Tanpa Kompromi</h2>
+                <p class="text-lg text-slate-600">Setiap produk kami melalui proses kontrol kualitas yang ketat untuk memastikan kepuasan Anda.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group p-10 bg-slate-50 rounded-3xl border border-slate-100 hover:bg-white hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-300">
+                    <div class="bg-blue-600 text-white w-14 h-14 rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-shield-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Tahan Cuaca</h3>
+                    <p class="text-slate-600 leading-relaxed">Lapisan khusus anti air yang melindungi desain dari pudar atau luntur, cocok untuk penggunaan indoor maupun outdoor.</p>
+                </div>
+                <div class="group p-10 bg-slate-50 rounded-3xl border border-slate-100 hover:bg-white hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-300">
+                    <div class="bg-blue-600 text-white w-14 h-14 rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-gem text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Finishing Premium</h3>
+                    <p class="text-slate-600 leading-relaxed">Pilihan finishing resin yang jernih memberikan efek mewah dan eksklusif pada identitas Anda.</p>
+                </div>
+                <div class="group p-10 bg-slate-50 rounded-3xl border border-slate-100 hover:bg-white hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-300">
+                    <div class="bg-blue-600 text-white w-14 h-14 rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-shipping-fast text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Kirim Seluruh Indonesia</h3>
+                    <p class="text-slate-600 leading-relaxed">Melayani pesanan dari berbagai kota dengan packing aman agar produk sampai tanpa cacat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daftar Harga Section -->
+    <section id="harga" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4">Daftar Harga Produk</h2>
+                <div class="w-24 h-2 bg-blue-600 mx-auto rounded-full mb-8"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Paket 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+                    <h3 class="text-xl font-bold mb-2">Standar Akrilik</h3>
+                    <div class="text-3xl font-extrabold text-blue-600 mb-6">Rp 8.000<span class="text-sm text-slate-400 font-normal"> /pcs</span></div>
+                    <ul class="space-y-4 mb-8 text-slate-600">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Material Akrilik Berkualitas</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Peniti/Pin Standar</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Anti Air</li>
+                    </ul>
+                    <a href="https://wa.me/6285725391967?text=Halo%20LR%20Store,%20saya%20tertarik%20pesan%20Name%20Tag%20Standar" class="block w-full text-center py-4 rounded-2xl border-2 border-blue-600 text-blue-600 font-bold hover:bg-blue-600 hover:text-white transition">Pesan Sekarang</a>
+                </div>
+
+                <!-- Paket 2 (Featured) -->
+                <div class="bg-blue-600 p-8 rounded-3xl shadow-2xl transform scale-105 border-4 border-blue-400 relative">
+                    <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-yellow-400 text-slate-900 px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest">Paling Laris</div>
+                    <h3 class="text-xl font-bold mb-2 text-white">Premium (Magnet)</h3>
+                    <div class="text-3xl font-extrabold text-white mb-6">Rp 10.000<span class="text-blue-200 text-sm font-normal"> /pcs</span></div>
+                    <ul class="space-y-4 mb-8 text-blue-50">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-blue-200 mr-2"></i> Efek Cembung Akrilik</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-blue-200 mr-2"></i> Pengait Magnet (Anti Merusak Baju)</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-blue-200 mr-2"></i> High Definition Printing</li>
+                    </ul>
+                    <a href="https://wa.me/6285725391967?text=Halo%20LR%20Store,%20saya%20tertarik%20pesan%20Name%20Tag%20Premium%20(Magnet)" class="block w-full text-center py-4 rounded-2xl bg-white text-blue-600 font-bold hover:bg-slate-100 transition shadow-lg">Pilih Paket Ini</a>
+                </div>
+
+           
+            
+            <p class="mt-16 text-center text-slate-500 font-medium">
+                <i class="fas fa-info-circle mr-2"></i> Harga di atas dapat berubah sewaktu-waktu tergantung jumlah pesanan (Grosir).
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak" class="bg-slate-900 text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-blue-600 text-white p-2 rounded-lg mr-3">
+                            <i class="fas fa-id-card text-2xl"></i>
+                        </div>
+                        <span class="text-3xl font-extrabold">LR STORE</span>
+                    </div>
+                    <p class="text-slate-400 text-lg leading-relaxed max-w-md">
+                        Penyedia jasa pembuatan identitas profesional terpercaya. Fokus pada kualitas material dan kepuasan pelanggan di setiap detail produk.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Menu</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="#" class="hover:text-blue-400 transition">Beranda</a></li>
+                        <li><a href="#keunggulan" class="hover:text-blue-400 transition">Keunggulan</a></li>
+                        <li><a href="#harga" class="hover:text-blue-400 transition">Daftar Harga</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Kontak Langsung</h4>
+                    <div class="space-y-4">
+                        <a href="https://wa.me/6285725391967" class="flex items-center text-slate-400 hover:text-green-500 transition group">
+                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center mr-3 group-hover:bg-green-500/20">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            0857-2539-1967
+                        </a>
+                        <div class="flex items-center text-slate-400">
+                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center mr-3">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            Jawa Tengah, Indonesia
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-800 text-center text-slate-500">
+                <p>&copy; 2024 LR STORE. Semua Hak Dilindungi. Design with <i class="fas fa-heart text-red-500"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Mobile Menu
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close menu on link click
+        const links = menu.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', () => menu.classList.add('hidden'));
+        });
+    </script>
+</body>
+</html>
+
